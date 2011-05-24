@@ -1,4 +1,5 @@
 BEGIN:VCALENDAR
+PRODID:-//Glasgow MathsJam//NONSGML hand-written//EN
 VERSION:2.0
 BEGIN:VEVENT
 ORGANIZER;Isabel;MAILTO:glasgow@mathsjam.com
