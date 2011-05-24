@@ -1,0 +1,42 @@
+The Glasgow MathsJam meets on the second-to-last Tuesday of the month.
+
+I, like many other people in these degenerate days, keep my appointments and
+other events in a trusted external system, which in my case is Google Calendar.
+
+The iCal spec provides for events recurring on, for instance, the
+second-to-last Tuesday of the month.
+
+Google Calendar does not implement this part of the spec.
+
+Hence, this program.
+
+
+REQUIREMENTS
+
+You will need to install the following CPAN modules:
+
+* Data::ICal
+* Data::ICal::DateTime
+* DateTime::Event::Recurrence
+
+On most Unix systems, this is as simple as typing
+
+    cpan Data::ICal Data::ICal::DateTime DateTime::Event::Recurrence
+
+at a command-prompt and possibly answering some easy questions.
+
+You'll also need the Perl interpreter installed; this comes installed by
+default on all non-stupid operating systems.
+
+
+USAGE
+
+Edit the file create.pl so that the $start and $end variables cover the range
+of dates you care about. [Yes, this is ugly. Patches plz?]
+
+Run the program, and capture the output:
+
+    ./create.pl > mathsjam.ics
+
+Import mathsjam.ics into your calendaring program, or stick it up on the Web,
+or whatever you want to do with it.
