@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+ORGANIZER;Isabel;MAILTO:glasgow@mathsjam.com
+RRULE:MP1 2- TU #0
+DTSTART:1900Z
+DTEND:2300Z
+LOCATION:The Counting House, St Vincent's Place
+SUMMARY:Glasgow MathsJam monthly meeting
+END:VEVENT
+END:VCALENDAR
