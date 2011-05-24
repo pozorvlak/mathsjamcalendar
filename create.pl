@@ -11,10 +11,12 @@ use 5.010;
 my $start = DateTime->new( year => 2011, month => 6, day => 20 );
 my $end = DateTime->new( year => 2013 );
 
+our $timezone = DateTime::TimeZone->new( name => 'local' );
 my $calendar = Data::ICal->new();
 my $recurrence = DateTime::Event::Recurrence->monthly(
         weeks => -2, days => "tu"
 );
+$recurrence->set_time_zone($timezone);
 
 for my $dt ($recurrence->as_list( start => $start, end => $end)) {
     my $vevent = Data::ICal::Entry::Event->new();
