@@ -6,7 +6,6 @@ use Data::ICal;
 use Data::ICal::Entry::Event;
 use Data::ICal::DateTime;
 use DateTime::Event::Recurrence;
-use 5.010;
 
 my $start = DateTime->new( year => 2011, month => 6, day => 20 );
 my $end = DateTime->new( year => 2013 );
