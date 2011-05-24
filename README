@@ -13,6 +13,10 @@ Hence, this program.
 
 REQUIREMENTS
 
+You'll need the Perl interpreter installed; this comes installed by default on
+all non-stupid operating systems. If you're unfortunate enough to be using a
+stupid operating system, visit http://www.perl.org for download instructions.
+
 You will need to install the following CPAN modules:
 
 * Data::ICal
@@ -24,9 +28,6 @@ On most Unix systems, this is as simple as typing
     cpan Data::ICal Data::ICal::DateTime DateTime::Event::Recurrence
 
 at a command-prompt and possibly answering some easy questions.
-
-You'll also need the Perl interpreter installed; this comes installed by
-default on all non-stupid operating systems.
 
 
 USAGE
