@@ -4,7 +4,6 @@ use strict;
 use warnings;
 use Data::ICal;
 use Data::ICal::Entry::Event;
-use Date::ICal;
 use Data::ICal::DateTime;
 use DateTime::Event::Recurrence;
 use 5.010;
